@@ -23,7 +23,7 @@ RUN wget https://www.zlib.net/zlib-${ZLIB_VERSION}.tar.xz && \
 RUN wget http://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz && \
     tar zxvf nginx-${NGINX_VERSION}.tar.gz && \
     cd nginx-${NGINX_VERSION} && \
-    export CFLAGS="-m64 -march=native -mtune=native -Ofast -flto -funroll-loops -ffunction-sections -fdata-sections -Wl,--gc-sections -static" && \
+    export CFLAGS="-m64 -Ofast -flto -funroll-loops -ffunction-sections -fdata-sections -Wl,--gc-sections -static" && \
     export LDFLAGS="-m64 -Wl,-s -Wl,--gc-sections -static" && \
     ./configure \
       --with-ld-opt="-static" \
