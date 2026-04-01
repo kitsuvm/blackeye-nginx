@@ -2,7 +2,7 @@ FROM alpine:3.23.2 AS nginx-builder
 
 ARG NGINX_VERSION=1.28.3
 ARG PCRE2_VERSION=10.47
-ARG ZLIB_VERSION=1.3.1
+ARG ZLIB_VERSION=1.3.2
 WORKDIR /app
 
 RUN apk -U upgrade && apk add --no-cache \
