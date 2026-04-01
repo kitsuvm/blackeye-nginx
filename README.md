@@ -1,4 +1,4 @@
-# Arulog // NGINX for Black Eye
+# KitsuVM // NGINX for Black Eye
 
 This repository contains a Dockerfile to build a custom NGINX container created specifically for Black Eye cluster.
 
