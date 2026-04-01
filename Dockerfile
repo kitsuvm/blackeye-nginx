@@ -17,7 +17,7 @@ RUN apk -U upgrade && apk add --no-cache \
 
 RUN git clone  --recurse-submodules --depth 1 --shallow-submodules --branch pcre2-${PCRE2_VERSION} -j$(nproc) https://github.com/PCRE2Project/pcre2.git
 
-RUN wget https://www.zlib.net/zlib-${ZLIB_VERSION}.tar.xz && \
+RUN wget https://zlib.net/zlib-${ZLIB_VERSION}.tar.xz && \
     tar Jxvf zlib-${ZLIB_VERSION}.tar.xz
 
 RUN wget http://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz && \
